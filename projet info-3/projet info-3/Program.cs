@@ -14,16 +14,13 @@ namespace projet_info_3
         [STAThread]
         static void Main()
         {
-            // uncomment these line after deleting the test form
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-
-            // this is for test form 
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Test());
-            //******************
+            Application.Run(new Form1());
+
+            
+            
         }
     }
 }

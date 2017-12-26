@@ -13,13 +13,14 @@ namespace projet_info_3
         Point location; // location of the car in the windows 
         int width; // width of the car 
         int height; // height of the car
-        int direction; // number of lane  
+        int direction; // route destin  
         bool moving; // true if moving
-
+ 
 
         public Car(Point loc, int dirct)
         {
             location = loc;
+
             direction = dirct;
             width = 10;
             height = 10;
@@ -38,9 +39,18 @@ namespace projet_info_3
             set { direction = value; }
         }
 
-        public void draw ( ref Graphics gr)
+        public void draw ( Graphics gr)
         {
-            gr.FillRectangle(Brushes.Aqua, this.location.X, this.location.Y, this.width, this.height);
+            gr.FillRectangle(Brushes.Aqua, this.location.X, this.location.Y, this.width, this.height);        
         }
-    }
+
+       
+        
+
+         
+
+
+
+        }
+    
 }
