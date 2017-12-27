@@ -20,6 +20,7 @@ namespace projet_info_3
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             timer1.Interval = 2000;
             //timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Start();
@@ -63,6 +64,25 @@ namespace projet_info_3
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+           
+            g.FillRectangle(Brushes.Black, new Rectangle(new Point(300, 300), new Size(750, 150)));
+            g.FillRectangle(Brushes.Black, new Rectangle(new Point(600, 0), new Size(150, 700)));
+            g.FillRectangle(Brushes.LimeGreen, new Rectangle(new Point(300, 0), new Size(300, 300)));
+            g.FillRectangle(Brushes.LimeGreen, new Rectangle(new Point(750, 0), new Size(300, 300)));
+            g.FillRectangle(Brushes.LimeGreen, new Rectangle(new Point(750, 450), new Size(300, 250)));
+            g.FillRectangle(Brushes.LimeGreen, new Rectangle(new Point(300, 450), new Size(300, 250)));
+      Brush br=  new SolidBrush(Color.White);
+            Pen p=new Pen(br);
+            g.DrawLine(p,new Point(300,375),new Point(600,375));
+            g.DrawLine(p, new Point(750, 375), new Point(1050, 375));
+            g.DrawLine(p, new Point(675, 0), new Point(675, 300));
+            g.DrawLine(p, new Point(675, 450), new Point(675, 700));
+           
         }
     }
 }
