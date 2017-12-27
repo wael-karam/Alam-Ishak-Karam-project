@@ -42,12 +42,12 @@ namespace projet_info_3
              if (isGreen)
              {
                  SolidBrush myBrush = new SolidBrush(Color.Green);
-                 gr.FillEllipse(myBrush, location.X, location.Y, 8, 8);
+                 gr.FillEllipse(myBrush, location.X, location.Y, 20, 20);
              }
              else
              {
                  SolidBrush myBrush = new SolidBrush(Color.Red);
-                 gr.FillEllipse(myBrush, location.X, location.Y, 8, 8);
+                 gr.FillEllipse(myBrush, location.X, location.Y,20, 20);
              }
          }
 

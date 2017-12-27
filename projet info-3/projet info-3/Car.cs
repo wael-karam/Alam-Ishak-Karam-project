@@ -42,7 +42,6 @@ namespace projet_info_3
         public void draw ( Graphics gr)
         {
             
-    
             gr.FillRectangle(Brushes.Aqua, this.location.X, this.location.Y, this.width, this.height);        
         }
 
