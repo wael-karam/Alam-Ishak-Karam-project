@@ -26,8 +26,26 @@ namespace projet_info_3
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            Car c = new Car(new Point(10, 10), 3);
+            Graphics gr = this.CreateGraphics();
+            c.draw(gr);
 
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            double a = dt.Ticks;
+
+
+         
+          
+         
+           Queue<double> q= route.expo(3, 10);
+           
+           
 
         }
     }

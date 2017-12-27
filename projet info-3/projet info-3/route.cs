@@ -12,21 +12,39 @@ namespace projet_info_3
         int routenbr;
         public Point startpoint;
         public Point endpoint;
+        public Rectangle boundaries;
+        public int height;
+        public int width;
+        public Point LocBound;
+        
 
 
 
 
 
 
-        public route(int Routenbr, Point Startpoint, Point Endpoint)
+        public route(int Routenbr,Point Loc, Point Startpoint, Point Endpoint,int heightRoute, int widthRoute)
         {
+            LocBound = Loc;
             routenbr = Routenbr;
             startpoint = Startpoint;
             endpoint = Endpoint;
+            width = widthRoute;
+            height = heightRoute;
+            this.boundaries = new Rectangle(Loc, new Size(widthRoute, heightRoute));
+            
+
+
+
 
 
 
         }
+        public Rectangle Boundaries { get { return boundaries; } set { boundaries = value; } }
+
+        public Point LocationBound { get { return LocBound; } set { LocBound = value; } }
+
+
         public Point StartP
         {
             get { return startpoint; }
@@ -77,10 +95,33 @@ namespace projet_info_3
             }
             return q;
         }
-        public void circule(Car c)
-        {
 
-     
+
+      public  void circuleend(Car c,Graphics gr)    //circulation jusqu'a endpoint
+
+        {
+           
+            
+            if (this.routenbr==1) { // this.startpoint =
+
+               
+                c.draw(gr);
+
+
+            }
+
+
+            if (this.routenbr == 2) { c.draw(gr); }
+            if (this.routenbr == 3) { c.draw(gr); }
+            if (this.routenbr == 4) { c.draw(gr); }
+
+
+
+
+
+
+
+
         }
     }
 }
