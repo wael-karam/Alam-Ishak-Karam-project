@@ -12,10 +12,10 @@ namespace projet_info_3
         int routenbr;
         public Point startpoint;
         public Point endpoint;
-        public Rectangle boundaries;
-        public int height;
-        public int width;
-        public Point LocBound;
+        //public Rectangle boundaries;
+       // public int height;
+       // public int width;
+        //public Point LocBound;
         
 
 
@@ -23,15 +23,15 @@ namespace projet_info_3
 
 
 
-        public route(int Routenbr,Point Loc, Point Startpoint, Point Endpoint,int heightRoute, int widthRoute)
+        public route(int Routenbr, Point Startpoint, Point Endpoint)
         {
-            LocBound = Loc;
+           // LocBound = Loc;
             routenbr = Routenbr;
             startpoint = Startpoint;
             endpoint = Endpoint;
-            width = widthRoute;
-            height = heightRoute;
-            this.boundaries = new Rectangle(Loc, new Size(widthRoute, heightRoute));
+          //  width = widthRoute;
+           // height = heightRoute;
+           // this.boundaries = new Rectangle(Loc, new Size(widthRoute, heightRoute));
             
 
 
@@ -40,9 +40,9 @@ namespace projet_info_3
 
 
         }
-        public Rectangle Boundaries { get { return boundaries; } set { boundaries = value; } }
+     //   public Rectangle Boundaries { get { return boundaries; } set { boundaries = value; } }
 
-        public Point LocationBound { get { return LocBound; } set { LocBound = value; } }
+      //  public Point LocationBound { get { return LocBound; } set { LocBound = value; } }
 
 
         public Point StartP
@@ -72,7 +72,7 @@ namespace projet_info_3
 
 
 
-        public static Queue<double> expo(double mean, double period)
+        public  Queue<double> expo(double mean, double period)
         {
             // This method generates a sequence of cars dates arrival
             // in interval [0, period] as double real numbers in minutes
