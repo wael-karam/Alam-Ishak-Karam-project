@@ -10,11 +10,11 @@ namespace projet_info_3
     class Car
     {
 
-        public Point location; // location of the car in the windows 
+    public    Point location; // location of the car in the windows 
         public int width; // width of the car 
-        public int height; // height of the car
-        public int direction; // route destin  
-        public bool moving; // true if moving
+       public int height; // height of the car
+     public   int direction; // route destin  
+   public     bool moving; // true if moving
  
 
         public Car(Point loc, int dirct)
@@ -42,6 +42,7 @@ namespace projet_info_3
         public void draw ( Graphics gr)
         {
             
+    
             gr.FillRectangle(Brushes.Aqua, this.location.X, this.location.Y, this.width, this.height);        
         }
 
